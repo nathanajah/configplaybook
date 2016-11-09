@@ -12,7 +12,7 @@
   when: ansible_distribution == 'Ubuntu'
 
 - name: "install nvim - ubuntu"
-  pacman:
+  apt:
     name: neovim
     state: latest
   become: true
