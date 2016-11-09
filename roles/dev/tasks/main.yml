@@ -1,3 +1,4 @@
 - include: cpp.yml
+- include: python.yml
 - include: nvim.yml
 - include: zsh.yml
