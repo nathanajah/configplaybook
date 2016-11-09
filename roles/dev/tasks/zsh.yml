@@ -1,0 +1,14 @@
+- name: "install zsh - archlinux"
+  pacman:
+    name: zsh
+    state: latest
+  become: true
+  when: ansible_distribution == 'Archlinux'
+
+- name: "install zsh - ubuntu"
+  apt:
+    naem: zsh
+    state: latest
+  become: true
+  when: ansible_distribution == 'Ubuntu'
+  
