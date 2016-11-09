@@ -26,28 +26,28 @@
   become: true
   when: ansible_distribution == 'Archlinux'
 
-- name: "install python3 - archlinux"
+- name: "install python3 - ubuntu"
   apt:
     name: python3
     state: latest
   become: true
   when: ansible_distribution == 'Ubuntu'
 
-- name: "install python2 - archlinux"
+- name: "install python2 - ubuntu"
   pacman:
     name: python
     state: latest
   become: true
   when: ansible_distribution == 'Ubuntu'
 
-- name: "install pip3 - archlinux"
+- name: "install pip3 - ubuntu"
   apt:
     name: python3-pip
     state: latest
   become: true
   when: ansible_distribution == 'Ubuntu'
 
-- name: "install pip2 - archlinux"
+- name: "install pip2 - ubuntu"
   apt:
     name: python-pip
     state: latest
