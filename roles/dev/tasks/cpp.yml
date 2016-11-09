@@ -1,0 +1,20 @@
+- name: "install g++ and gcc - archlinux"
+  pacman:
+    name: gcc
+    state: latest
+  become: true
+  when: ansible_distribution == 'Archlinux'
+
+- name: "install g++ - ubuntu"
+  apt:
+    name: g++
+    state: latest
+  become: true
+  when: ansible_distribution == 'Ubuntu'
+
+- name: "install gcc - ubuntu"
+  apt:
+    name: gcc
+    state: latest
+  become: true
+  when: ansible_distribution == 'Ubuntu'
