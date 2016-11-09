@@ -1,0 +1,13 @@
+- name: "install git - archlinux"
+  pacman:
+    name: git
+    state: latest
+  become: true
+  when: ansible_distribution == 'Archlinux'
+
+- name: "install git - ubuntu"
+  pacman:
+    name: git
+    state: latest
+  become: true
+  when: ansible_distribution == 'Ubuntu'
