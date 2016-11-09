@@ -1,0 +1,19 @@
+- name: "install nvim - archlinux"
+  pacman:
+    name: neovim
+    state: latest
+  become: true
+  when: ansible_distribution == 'Archlinux'
+
+- name: "add nvim ppa - ubuntu"
+  apt_repository:
+    repo: "ppa:neovim-ppa/unstable"
+    state: "present"
+  when: ansible_distribution == 'Ubuntu'
+
+- name: "install nvim - ubuntu"
+  pacman:
+    name: neovim
+    state: latest
+  become: true
+  when: ansible_distribution == 'Ubuntu'
