@@ -6,7 +6,7 @@
   when: ansible_distribution == 'Archlinux'
 
 - name: "install git - ubuntu"
-  pacman:
+  apt:
     name: git
     state: latest
   become: true
