@@ -6,7 +6,7 @@
   when: ansible_distribution == 'Archlinux'
 
 - name: "install tmux - ubuntu"
-  pacman:
+  apt:
     name: tmux
     state: latest
   become: true
