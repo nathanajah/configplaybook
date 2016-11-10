@@ -4,4 +4,5 @@
 - include: ranger.yml
 - include: git.yml
 - include: nvim.yml
+- include: nvim_python.yml
 - include: zsh.yml
