@@ -1,0 +1,13 @@
+- name: "install tmux - archlinux"
+  pacman:
+    name: tmux
+    state: latest
+  become: true
+  when: ansible_distribution == 'Archlinux'
+
+- name: "install tmux - ubuntu"
+  pacman:
+    name: tmux
+    state: latest
+  become: true
+  when: ansible_distribution == 'Ubuntu'
