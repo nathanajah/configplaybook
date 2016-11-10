@@ -34,7 +34,7 @@
   when: ansible_distribution == 'Ubuntu'
 
 - name: "install python2 - ubuntu"
-  pacman:
+  apt:
     name: python
     state: latest
   become: true
