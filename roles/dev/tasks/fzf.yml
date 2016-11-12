@@ -1,0 +1,9 @@
+- name: "clone fzf from git"
+  git:
+    repo: https://github.com/junegunn/fzf
+    dest: "{{ ansible_env.HOME }}~/.deployment_files/fzf/"
+    version: master
+
+- name: "run fzf installer"
+  command: "{{ ansible_env.HOME }}/.deployment_files/fzf/install --all"
+  become: yes

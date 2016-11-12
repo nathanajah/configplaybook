@@ -6,3 +6,4 @@
 - include: nvim.yml
 - include: nvim_python.yml
 - include: zsh.yml
+- include: fzf.yml
