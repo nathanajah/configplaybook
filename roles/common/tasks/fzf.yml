@@ -1,5 +1,6 @@
 - name: "clone fzf from git"
   git:
+    clone: no
     repo: https://github.com/junegunn/fzf
     dest: "{{ ansible_env.HOME }}~/.deployment_files/fzf/"
     version: master
