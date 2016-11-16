@@ -1,0 +1,16 @@
+- name: Copy plug
+  copy:
+    src: files/nvim/plug/
+    dest: ~/.config/nvim/plug/runtime/archlaptop/
+- name: Copy config
+  copy:
+    src: files/nvim/config/
+    dest: ~/.config/nvim/config/runtime/archlaptop/
+- name: Install plugins
+  command: nvim +PlugInstall +qall
+
+- name: Promptline
+  command: nvim "+PromptlineSnapshot! ~/.config/zsh/prompt.sh lightline" +qall
+
+- name: Tmuxline
+  command: nvim "+Tmuxline lightline" "+TmuxlineSnapshot! ~/.config/tmux/tmuxline.conf" +qall

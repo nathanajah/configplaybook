@@ -1,0 +1,4 @@
+- name: Copy Xresources
+  copy:
+    src: files/Xresources/.Xresources
+    dest: ~/.Xresources

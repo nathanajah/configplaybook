@@ -1,0 +1,2 @@
+- include: xresources.yml
+- include: nvim_config.yml
