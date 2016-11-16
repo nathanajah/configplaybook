@@ -1,7 +1,7 @@
 - name: Clone tpm
   git:
     repo: https://github.com/tmux-plugins/tpm
-    dest: ~/.config/tmux/plugins
+    dest: ~/.config/tmux/plugins/tpm
 
 - name: Copy .tmux.conf
   copy:
