@@ -7,3 +7,7 @@
 - include: nvim_python.yml
 - include: zsh.yml
 - include: ctags.yml
+- include: fzf.yml
+- include: nvim_base.yml
+- include: zsh_base.yml
+- include: tmux_base.yml

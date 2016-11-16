@@ -1,0 +1,20 @@
+- name: Copy init.vim
+  copy:
+    src: files/nvim/init.vim
+    dest: ~/.config/nvim/init.vim
+
+- name: Copy plug
+  copy:
+    src: files/nvim/plug
+    dest: ~/.config/nvim
+
+- name: Copy config
+  copy:
+    src: files/nvim/config
+    dest: ~/.config/nvim
+
+- name: Install plugins
+  command: nvim +PlugInstall +qall
+
+- name: Promptline
+  command: nvim "+PromptlineSnapshot! ~/.config/zsh/prompt.sh lightline" +qall
