@@ -12,3 +12,9 @@
   copy:
     src: files/nvim/config
     dest: ~/.config/nvim
+
+- name: Install plugins
+  command: nvim +PlugInstall +qall
+
+- name: Promptline
+  command: nvim "+PromptlineSnapshot! ~/.config/zsh/prompt.sh lightline" +qall

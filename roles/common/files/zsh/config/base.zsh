@@ -1,3 +1,5 @@
+# Promptline
+source ~/.config/zsh/prompt.sh
 # Editor
 export EDITOR='nvim'
 export VISUAL='nvim'
