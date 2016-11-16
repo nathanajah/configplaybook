@@ -8,3 +8,4 @@
 - include: zsh.yml
 - include: fzf.yml
 - include: nvim_base.yml
+- include: zsh_base.yml
