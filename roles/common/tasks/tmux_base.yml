@@ -6,4 +6,4 @@
 - name: Copy .tmux.conf
   copy:
     src: files/tmux/.tmux.conf
-    dest: ~/.tmux.conf
+    dest: ~/.byobu/.tmux.conf
