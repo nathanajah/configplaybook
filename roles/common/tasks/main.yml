@@ -1,6 +1,7 @@
 - include: byobu.yml
 - include: cpp.yml
 - include: python.yml
+- include: ruby.yml
 - include: tmux.yml
 - include: ranger.yml
 - include: git.yml

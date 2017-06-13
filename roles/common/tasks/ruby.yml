@@ -1,0 +1,13 @@
+- name: "Install ruby - archlinux"
+  pacman:
+    name: ruby
+    state: latest
+  become: true
+  when: ansible_distribution == 'Archlinux'
+
+- name: "Install ruby - ubuntu"
+  apt:
+    name: ruby
+    state: latest
+  become: true
+  when: ansible_distribution == 'Ubuntu'
