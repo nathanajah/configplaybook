@@ -1,1 +1,2 @@
+- include: haskell.yml
 - include: nvim_config.yml
