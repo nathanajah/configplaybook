@@ -1,3 +1,10 @@
+- name: "install zsh - mac"
+  homebrew:
+    name: zsh
+    state: latest
+  become: true
+  when: ansible_distribution == 'MacOSX'
+
 - name: "install zsh - archlinux"
   pacman:
     name: zsh

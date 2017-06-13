@@ -1,3 +1,10 @@
+- name: "install ranger - mac"
+  homebrew:
+    name: ranger
+    state: latest
+  become: true
+  when: ansible_distribution == 'MacOSX'
+
 - name: "install ranger - archlinux"
   pacman:
     name: ranger

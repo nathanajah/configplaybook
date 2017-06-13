@@ -1,3 +1,10 @@
+- name: "install g++ and gcc - mac"
+  homebrew:
+    name: gcc
+    state: latest
+  become: true
+  when: ansible_distribution == 'MacOSX'
+
 - name: "install g++ and gcc - archlinux"
   pacman:
     name: gcc

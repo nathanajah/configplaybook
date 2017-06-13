@@ -1,3 +1,10 @@
+- name: "Install haskell-stack - mac"
+  homebrew:
+    name: haskell-stack
+    state: latest
+  become: true
+  when: ansible_distribution == 'MacOSX'
+
 - name: "Install haskell-stack - ubuntu"
   apt:
     name: haskell-stack
