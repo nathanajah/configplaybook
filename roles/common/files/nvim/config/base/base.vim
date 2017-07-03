@@ -17,3 +17,6 @@ set shiftwidth=4
 
 " Hidden
 set hidden
+
+set smartindent
+set expandtab shiftwidth=4 tabstop=4

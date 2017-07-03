@@ -1,10 +1,13 @@
+- include: byobu.yml
 - include: cpp.yml
 - include: python.yml
+- include: ruby.yml
 - include: tmux.yml
 - include: ranger.yml
 - include: git.yml
 - include: nvim.yml
 - include: nvim_python.yml
+- include: nvim_ruby.yml
 - include: zsh.yml
 - include: ctags.yml
 - include: fzf.yml

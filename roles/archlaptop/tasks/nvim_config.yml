@@ -11,6 +11,3 @@
 
 - name: Promptline
   command: nvim "+PromptlineSnapshot! ~/.config/zsh/prompt.sh lightline" +qall
-
-- name: Tmuxline
-  command: nvim "+Tmuxline lightline" "+TmuxlineSnapshot! ~/.config/tmux/tmuxline.conf" +qall

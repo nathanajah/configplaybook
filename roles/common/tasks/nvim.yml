@@ -1,3 +1,17 @@
+- name: "add nvim tap - mac"
+  homebrew_tap:
+    name: neovim/neovim
+    state: present
+  become: true
+  when: ansible_distribution == 'MacOSX'
+
+- name: "install nvim - mac"
+  homebrew:
+    name: neovim
+    state: latest
+  become: true
+  when: ansible_distribution == 'MacOSX'
+
 - name: "install nvim - archlinux"
   pacman:
     name: neovim

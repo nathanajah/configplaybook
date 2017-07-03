@@ -1,3 +1,10 @@
+- name: "install git - mac"
+  homebrew:
+    name: git
+    state: latest
+  become: true
+  when: ansible_distribution == 'MacOSX'
+
 - name: "install git - archlinux"
   pacman:
     name: git

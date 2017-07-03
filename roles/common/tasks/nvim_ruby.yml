@@ -1,0 +1,5 @@
+- name: "Install ruby-neovim"
+  gem:
+    name: neovim
+    state: latest
+  become: true

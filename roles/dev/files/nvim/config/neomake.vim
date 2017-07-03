@@ -22,4 +22,6 @@ let g:neomake_cpp_clangtidy_maker = {
 
 let g:neomake_java_enabled_makers = ['javac']
 
+let g:neomake_haskell_enabled_makers = ['ghcmod', 'hlint']
+
 autocmd! BufWritePost * Neomake

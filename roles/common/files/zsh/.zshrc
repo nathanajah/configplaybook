@@ -1,3 +1,8 @@
+# zstyle must be set before "antigen use prezto", since modules are
+# initialized on that line.
+zstyle ':prezto:*:*' case-sensitive 'yes'
+zstyle ':prezto:*:*' color 'yes'
+
 source "$HOME/.config/zsh/antigen/antigen.zsh"
 
 _zdotdir_set=${+parameters[ZDOTDIR]}
@@ -6,9 +11,6 @@ if (( _zdotdir_set )); then
 fi
 
 antigen use prezto
-
-zstyle ':prezto:*:*' case-sensitive 'yes'
-zstyle ':prezto:*:*' color 'yes'
 
 antigen bundle sorin-ionescu/prezto modules/environment
 antigen bundle sorin-ionescu/prezto modules/terminal
@@ -22,6 +24,7 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-history-substring-search
 antigen bundle Tarrasch/zsh-bd
 antigen bundle supercrabtree/k
+antigen bundle jocelynmallon/zshmarks
 
 antigen apply 
 

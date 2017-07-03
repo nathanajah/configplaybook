@@ -13,6 +13,17 @@ then
   PATH="$HOME/bin:$PATH"
 fi
 
+# Local bin
+if [ -d "$HOME/.local/bin" ]
+then
+  PATH="$HOME/.local/bin:$PATH"
+fi
+
+# Ruby gem path
+if hash ruby 2>/dev/null; then
+  PATH="PATH=$(ruby -e 'print Gem.user_dir')/bin:$PATH"
+fi
+
 zmodload zsh/terminfo
 bindkey "$terminfo[kcuu1]" history-substring-search-up
 bindkey "$terminfo[kcud1]" history-substring-search-down
