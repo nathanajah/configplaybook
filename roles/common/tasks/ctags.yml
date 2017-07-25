@@ -2,7 +2,6 @@
   homebrew:
     name: ctags
     state: latest
-  become: true
   when: ansible_distribution == 'MacOSX'
 
 - name: "install ctags - archlinux"

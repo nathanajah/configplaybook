@@ -2,14 +2,12 @@
   homebrew:
     name: python3
     state: latest
-  become: true
   when: ansible_distribution == 'MacOSX'
 
 - name: "install python2 - mac"
   homebrew:
     name: python
     state: latest
-  become: true
   when: ansible_distribution == 'MacOSX'
 
 - name: "install python3 - archlinux"

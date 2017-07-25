@@ -2,7 +2,6 @@
   homebrew:
     name: tmux
     state: latest
-  become: true
   when: ansible_distribution == 'MacOSX'
 
 - name: "install tmux - archlinux"

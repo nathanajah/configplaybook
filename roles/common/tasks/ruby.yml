@@ -2,7 +2,6 @@
   homebrew:
     name: ruby
     state: latest
-  become: true
   when: ansible_distribution == 'MacOSX'
 
 - name: "Install ruby - archlinux"

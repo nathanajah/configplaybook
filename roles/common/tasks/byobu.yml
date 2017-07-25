@@ -2,7 +2,6 @@
   homebrew:
     name: byobu
     state: latest
-  become: true
   when: ansible_distribution == 'MacOSX'
 
 - name: "install byobu - archlinux"
