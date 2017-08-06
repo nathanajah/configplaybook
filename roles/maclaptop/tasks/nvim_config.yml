@@ -1,0 +1,12 @@
+- name: Copy plug
+  copy:
+    src: files/nvim/plug/
+    dest: ~/.config/nvim/plug/runtime/maclaptop/
+- name: Copy config
+  copy:
+    src: files/nvim/config/
+    dest: ~/.config/nvim/config/runtime/maclaptop/
+- name: Install plugins
+  command: nvim +PlugInstall +qall
+- name: Promptline
+  command: nvim "+PromptlineSnapshot! ~/.config/zsh/prompt.sh lightline" +qall
