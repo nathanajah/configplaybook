@@ -13,7 +13,7 @@
 
 - name: "Install haskell-stack - archlinux"
   pacman:
-    name: haskell-stack
+    name: stack
     state: latest
   become: true
   when: ansible_distribution == 'Archlinux'
