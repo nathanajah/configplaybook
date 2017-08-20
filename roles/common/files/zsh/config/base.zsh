@@ -21,7 +21,7 @@ fi
 
 # Ruby gem path
 if hash ruby 2>/dev/null; then
-  PATH="PATH=$(ruby -e 'print Gem.user_dir')/bin:$PATH"
+  PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 fi
 
 zmodload zsh/terminfo
