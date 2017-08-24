@@ -3,6 +3,11 @@
     repo: https://github.com/tmux-plugins/tpm
     dest: ~/.config/tmux/plugins/tpm
 
+- name: Copy base.tmux.conf
+  copy:
+    src: files/tmux/config/base.tmux.conf
+    dest: ~/.config/tmux/base.tmux.conf
+
 - name: Copy .tmux.conf
   copy:
     src: files/tmux/.tmux.conf
