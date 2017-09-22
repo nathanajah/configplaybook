@@ -10,7 +10,7 @@
     state: present
     tool: yaourt
   become: true
-  when: ansible_distribution == 'Archlinux'
+  when: ansible_distribution == 'Arch Linux'
 
 - name: "install byobu - ubuntu"
   apt:

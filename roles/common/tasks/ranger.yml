@@ -9,7 +9,7 @@
     name: ranger
     state: latest
   become: true
-  when: ansible_distribution == 'Archlinux'
+  when: ansible_distribution == 'Arch Linux'
 
 - name: "install ranger - ubuntu"
   apt:

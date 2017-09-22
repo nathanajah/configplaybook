@@ -9,7 +9,7 @@
     name: zsh
     state: latest
   become: true
-  when: ansible_distribution == 'Archlinux'
+  when: ansible_distribution == 'Arch Linux'
 
 - name: "install zsh - ubuntu"
   apt:
