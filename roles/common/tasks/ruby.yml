@@ -17,3 +17,10 @@
     state: latest
   become: true
   when: ansible_distribution == 'Ubuntu'
+
+- name: "Install ruby-dev - ubuntu"
+  apt:
+    name: ruby-dev
+    state: latest
+  become: true
+  when: ansible_distribution == 'Ubuntu'
