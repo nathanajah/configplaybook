@@ -1,2 +1,2 @@
-- include: haskell.yml
-- include: nvim_config.yml
+- import_tasks: haskell.yml
+- import_tasks: nvim_config.yml
