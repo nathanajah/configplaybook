@@ -1,11 +1,18 @@
+- name: Make sure that nvim config folder exists
+  file:
+    path: ~/.config/nvim
+    state: directory
+
 - name: Copy plug
   copy:
     src: files/nvim/plug/
     dest: ~/.config/nvim/plug/runtime/archlaptop/
+
 - name: Copy config
   copy:
     src: files/nvim/config/
     dest: ~/.config/nvim/config/runtime/archlaptop/
+
 - name: Install plugins
   command: nvim +PlugInstall +qall
 

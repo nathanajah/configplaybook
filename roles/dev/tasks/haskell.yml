@@ -16,4 +16,4 @@
     name: stack
     state: latest
   become: true
-  when: ansible_distribution == 'Archlinux'
+  when: ansible_distribution == 'Arch Linux'

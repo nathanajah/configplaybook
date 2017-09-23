@@ -1,3 +1,8 @@
+- name: Make sure that nvim config directory exists
+  file:
+    path: ~/.config/nvim
+    state: directory
+
 - name: Copy init.vim
   copy:
     src: files/nvim/init.vim
