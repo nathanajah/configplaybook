@@ -3,12 +3,22 @@
     repo: https://github.com/tmux-plugins/tpm
     dest: ~/.config/tmux/plugins/tpm
 
-- name: Copy base.tmux.conf
+- name: Copy base.tmux.conf to ~
   copy:
     src: files/tmux/config/base.tmux.conf
     dest: ~/.config/tmux/base.tmux.conf
 
-- name: Copy .tmux.conf
+- name: Copy .tmux.conf to .byobu
   copy:
     src: files/tmux/.tmux.conf
     dest: ~/.byobu/.tmux.conf
+
+- name: Copy .tmux.conf to ~
+  copy:
+    src: files/tmux/.tmux.conf
+    dest: ~/.byobu/.tmux.conf
+
+- name: Initialize empty platform conf
+  file:
+    path: ~/.config/tmux/platform.tmux.conf
+    state: touch

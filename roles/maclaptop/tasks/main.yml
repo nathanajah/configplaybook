@@ -1,1 +1,3 @@
 - include: nvim_config.yml
+- include: reattach_to_user_namespace.yml
+- include: tmux_config.yml
