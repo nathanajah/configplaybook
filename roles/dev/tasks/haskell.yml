@@ -10,6 +10,7 @@
     state: latest
   become: true
   when: ansible_distribution == 'Ubuntu'
+  ignore_errors: yes
 
 - name: "Install haskell-stack - archlinux"
   pacman:
