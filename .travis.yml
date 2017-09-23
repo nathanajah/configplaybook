@@ -1,6 +1,9 @@
 before_install:
-  - sudo apt-get update -qq
-  - sudo apt-get install -qq ansible
+  - sudo apt-get update
+  - sudo apt-get install software-properties-common
+  - sudo apt-add-repository ppa:ansible/ansible
+  - sudo apt-get update
+  - sudo apt-get install ansible
 
 sudo: required
 dist: trusty
