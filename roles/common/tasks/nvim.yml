@@ -21,6 +21,7 @@
   apt_repository:
     repo: "ppa:neovim-ppa/unstable"
     state: "present"
+  become: true
   when: ansible_distribution == 'Ubuntu'
 
 - name: "install nvim - ubuntu"
