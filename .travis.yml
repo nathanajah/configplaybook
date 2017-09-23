@@ -1,3 +1,6 @@
+os:
+  - linux
+  - osx
 before_install:
   - sudo apt-get update
   - sudo apt-get install software-properties-common
@@ -9,4 +12,5 @@ sudo: required
 dist: trusty
 
 script:
-  - ansible-playbook -c local uowlaptop.yml
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then ansible-playbook -c local uowlaptop.yml
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then ansible-playbook -c local maclaptop.yml
