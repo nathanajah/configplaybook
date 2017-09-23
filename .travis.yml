@@ -7,6 +7,7 @@ before_install:
   - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sudo apt-add-repository -y ppa:ansible/ansible; fi
   - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sudo apt-get update; fi
   - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sudo apt-get -y install ansible; fi
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew install ansible; fi
 
 sudo: required
 dist: trusty
