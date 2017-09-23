@@ -2,15 +2,15 @@ os:
   - linux
   - osx
 before_install:
-  - sudo apt-get update
-  - sudo apt-get install software-properties-common
-  - sudo apt-add-repository -y ppa:ansible/ansible
-  - sudo apt-get update
-  - sudo apt-get -y install ansible
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sudo apt-get update; fi
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sudo apt-get install software-properties-common; fi
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sudo apt-add-repository -y ppa:ansible/ansible; fi
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sudo apt-get update; fi
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sudo apt-get -y install ansible; fi
 
 sudo: required
 dist: trusty
 
 script:
-  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then ansible-playbook -c local uowlaptop.yml
-  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then ansible-playbook -c local maclaptop.yml
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then ansible-playbook -c local uowlaptop.yml; fi
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then ansible-playbook -c local maclaptop.yml; fi
