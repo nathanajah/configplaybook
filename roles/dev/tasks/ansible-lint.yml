@@ -1,0 +1,19 @@
+- name: "Install ansible-lint - mac"
+  pip2:
+    name: ansible-lint
+    state: latest
+  when: ansible_distribution == 'MacOSX'
+
+- name: "Install ansible-lint - ubuntu"
+  apt:
+    name: ansible-lint
+    state: latest
+  become: true
+  when: ansible_distribution == 'Ubuntu'
+
+  - name: "Install ansible-lint - archlinux"
+  pacman:
+    name: ansible-lint
+    state: latest
+  become: true
+  when: ansible_distribution == 'Arch Linux'

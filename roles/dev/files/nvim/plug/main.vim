@@ -3,7 +3,7 @@ Plug 'Shougo/neosnippet'
 Plug 'Shougo/neosnippet-snippets'
 Plug 'Shougo/neoinclude.vim'
 Plug 'tpope/vim-fugitive'
-Plug 'benekastah/neomake'
+Plug 'w0rp/ale'
 Plug 'airblade/vim-gitgutter'
 
 " Language specific
