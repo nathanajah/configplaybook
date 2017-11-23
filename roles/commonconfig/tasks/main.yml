@@ -1,0 +1,3 @@
+- import_tasks: zsh.yml
+- import_tasks: main.yml
+- import_tasks: tmux.yml

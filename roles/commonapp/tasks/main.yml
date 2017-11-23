@@ -11,6 +11,3 @@
 - import_tasks: zsh.yml
 - import_tasks: ctags.yml
 - import_tasks: fzf.yml
-- import_tasks: nvim_base.yml
-- import_tasks: zsh_base.yml
-- import_tasks: tmux_base.yml
