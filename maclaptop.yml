@@ -1,6 +1,6 @@
 - hosts: localhost
   roles:
-  - commonpp
+  - commonapp
   - commonconfig
   - dev
   - maclaptop
