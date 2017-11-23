@@ -7,4 +7,4 @@ let g:ale_linters = {
   \ }
 
 let g:ale_cpp_gcc_options = '-std=c++14 -Wall'
-let g:ale_cpp_clangtidy_options = '-checks=* -std=c++14'
+let g:ale_cpp_clangtidy_options = '-std=c++14'
