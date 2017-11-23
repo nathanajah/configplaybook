@@ -9,7 +9,7 @@
     name: tmux
     state: latest
   become: true
-  when: ansible_distribution == 'Arch Linux'
+  when: ansible_distribution == 'Archlinux'
 
 - name: "install tmux - ubuntu"
   apt:
