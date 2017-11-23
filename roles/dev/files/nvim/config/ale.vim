@@ -3,4 +3,8 @@ let g:ale_linters = {
   \ 'python': ['flake8'],
   \ 'haskell': ['ghc-mod', 'hlint'],
   \ 'ansible': ['ansible_lint'],
+  \ 'cpp': ['gcc', 'clangtidy'],
   \ }
+
+let g:ale_cpp_gcc_options = '-std=c++14 -Wall'
+let g:ale_cpp_clangtidy_options = '-checks=* -std=c++14'
