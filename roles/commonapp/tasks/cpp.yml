@@ -6,7 +6,7 @@
 
 - name: "install g++ and gcc - archlinux"
   pacman:
-    name: gcc-multilib
+    name: gcc
     state: latest
   become: true
   when: ansible_distribution == 'Archlinux'
