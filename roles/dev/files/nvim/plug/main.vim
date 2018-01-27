@@ -11,14 +11,11 @@ Plug 'autozimu/LanguageClient-neovim', {
     \ }
 
 " Language specific
-Plug 'digitaltoad/vim-jade'
+Plug 'roxma/ncm-clang'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'marijnh/tern_for_vim'
 Plug 'mustache/vim-mustache-handlebars'
-Plug 'Rip-Rip/clang_complete'
-Plug 'zchee/deoplete-jedi'
 Plug 'sheerun/vim-polyglot'
 Plug 'benjie/neomake-local-eslint.vim'
 Plug 'neovimhaskell/haskell-vim'
-Plug 'eagletmt/neco-ghc'
