@@ -2,7 +2,7 @@
 syntax on
 
 " Line numbers
-set number relativenumber
+set number
 
 " Undo
 set undodir=$HOME/.config/nvim/undodir/
