@@ -6,5 +6,10 @@ let g:ale_linters = {
   \ 'cpp': ['gcc', 'clangtidy'],
   \ }
 
+let g:ale_fixers = {
+  \ 'javascript': ['prettier'],
+  \ 'typescript': ['prettier'],
+  \ }
+
 let g:ale_cpp_gcc_options = '-std=c++14 -Wall'
 let g:ale_cpp_clangtidy_options = '-std=c++14'

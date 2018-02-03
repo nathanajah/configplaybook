@@ -13,6 +13,8 @@ Plug 'autozimu/LanguageClient-neovim', {
 " Language specific
 Plug 'roxma/ncm-clang'
 Plug 'pangloss/vim-javascript'
+Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
 Plug 'mxw/vim-jsx'
 Plug 'marijnh/tern_for_vim'
 Plug 'mustache/vim-mustache-handlebars'
