@@ -65,3 +65,9 @@
     state: latest
   become: true
   when: ansible_distribution == 'Ubuntu'
+
+- name: "install virtualenv"
+  pip:
+    name: virtualenv
+    state: latest
+  become: true
