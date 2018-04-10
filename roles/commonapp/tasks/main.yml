@@ -2,6 +2,7 @@
 - import_tasks: cpp.yml
 - import_tasks: python.yml
 - import_tasks: ruby.yml
+- import_tasks: ruby_rbenv.yml
 - import_tasks: tmux.yml
 - import_tasks: ranger.yml
 - import_tasks: git.yml

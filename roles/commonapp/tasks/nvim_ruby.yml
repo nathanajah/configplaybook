@@ -1,5 +1,10 @@
 - name: "Install ruby-neovim"
   gem:
+    executable: ~/.rbenv/versions/2.5.1/bin/gem
     name: neovim
     state: latest
-  become: true
+    user_install: no
+  register: hello
+    
+
+- debug: var=hello.stdout_lines
