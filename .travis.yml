@@ -13,6 +13,7 @@ before_install:
   - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew unlink python; fi
   - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew install python@2; fi
   - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew unlink python@2; fi
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew install python; fi
   - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew link python; fi
   - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew install ansible; fi
 
