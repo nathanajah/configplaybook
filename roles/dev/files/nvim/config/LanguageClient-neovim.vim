@@ -4,8 +4,8 @@ let g:LanguageClient_serverCommands = {
     \ 'typescript.jsx': ['javascript-typescript-stdio'],
     \ }
 
-nnoremap <silent> K :call LanguageClient_textDocument_hover()<CR>
-nnoremap <silent> gd :call LanguageClient_textDocument_definition()<CR>
-nnoremap <silent> <F2> :call LanguageClient_textDocument_rename()<CR>
+autocmd Filetype haskell,typescript,typescript.jsx nnoremap <buffer> <silent> K :call LanguageClient_textDocument_hover()<CR>
+autocmd Filetype haskell,typescript,typescript.jsx nnoremap <buffer> <silent> gd :call LanguageClient_textDocument_definition()<CR>
+autocmd Filetype haskell,typescript,typescript.jsx nnoremap <buffer> <silent> <F2> :call LanguageClient_textDocument_rename()<CR>
 
 let g:LanguageClient_autoStart = 1
