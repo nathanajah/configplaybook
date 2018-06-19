@@ -1,4 +1,4 @@
-Plug 'roxma/nvim-completion-manager'
+Plug 'Shougo/deoplete.nvim'
 Plug 'Shougo/neosnippet'
 Plug 'Shougo/neosnippet-snippets'
 Plug 'Shougo/neoinclude.vim'

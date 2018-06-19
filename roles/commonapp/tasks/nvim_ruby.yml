@@ -4,7 +4,3 @@
     name: neovim
     state: latest
     user_install: no
-  register: hello
-    
-
-- debug: var=hello.stdout_lines
