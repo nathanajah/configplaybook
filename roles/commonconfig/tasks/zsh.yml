@@ -11,4 +11,4 @@
 - name: Copy config
   copy:
     src: files/zsh/config/base.zsh
-    dest: ~/.config/zsh/base.zsh
+    dest: ~/.config/zsh/config/base.zsh
