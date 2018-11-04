@@ -18,18 +18,15 @@
     path: ~/.rbenv/versions/2.5.1
   register: rbenv_2_5_1
 
-- name: Install ssl requirements for ubuntu
+- name: Install requirements for ubuntu
   apt:
-    name: libssl-dev
+    name:
+      - libssl-dev
+      - libreadline-dev
+      - zlib1g-dev
     state: latest
-- name: Install readline requirements for ubuntu
-  apt:
-    name: libreadline-dev
-    state: latest
-- name: Install zlib1g requirements for ubuntu
-  apt:
-    name: zlib1g-dev
-    state: latest
+  become: true
+  when: ansible_distribution == 'Ubuntu'
 
 - name: "install ruby 2.5.1"
   shell: ~/.rbenv/bin/rbenv install 2.5.1
