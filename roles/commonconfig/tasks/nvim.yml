@@ -30,7 +30,7 @@
     delete: yes
 
 - name: Install plugins
-  command: nvim +PlugInstall +qall
+  command: nvim +PlugInstall +UpdateRemotePlugins +qall
 
 - name: Promptline
   command: nvim "+PromptlineSnapshot! ~/.config/zsh/prompt.sh lightline" +qall
