@@ -1,3 +1,13 @@
+- name: Make directory for zsh
+  file:
+    path: ~/.config/zsh
+    state: directory
+
+- name: Make directory for zsh config
+  file:
+    path: ~/.config/zsh/config
+    state: directory
+
 - name: Clone antigen
   git:
     repo: https://github.com/zsh-users/antigen
