@@ -68,6 +68,11 @@ then
   eval "$(rbenv init -)"
 fi
 
+if [ -d "$HOME/.yarn/bin" ]
+then
+  PATH="$HOME/.yarn/bin:$PATH"
+fi
+
 # Ruby gem path
 if hash ruby 2>/dev/null; then
   PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
