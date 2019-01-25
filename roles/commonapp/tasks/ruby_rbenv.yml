@@ -13,10 +13,10 @@
     dest: ~/.rbenv/plugins/ruby-build
     repo: https://github.com/rbenv/ruby-build.git
 
-- name: Check that ruby 2.5.1 exists
+- name: Check that ruby 2.6.0 exists
   stat:
-    path: ~/.rbenv/versions/2.5.1
-  register: rbenv_2_5_1
+    path: ~/.rbenv/versions/2.6.0
+  register: rbenv_2_6_0
 
 - name: Install requirements for ubuntu
   apt:
@@ -28,9 +28,9 @@
   become: true
   when: ansible_distribution == 'Ubuntu'
 
-- name: "install ruby 2.5.1"
-  shell: ~/.rbenv/bin/rbenv install 2.5.1
-  when: rbenv_2_5_1.stat.exists == False
+- name: "install ruby 2.6.0"
+  shell: ~/.rbenv/bin/rbenv install 2.6.0
+  when: rbenv_2_6_0.stat.exists == False
 
-- name: "use ruby 2.5.1"
-  shell: ~/.rbenv/bin/rbenv global 2.5.1
+- name: "use ruby 2.6.0"
+  shell: ~/.rbenv/bin/rbenv global 2.6.0
