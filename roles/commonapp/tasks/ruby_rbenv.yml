@@ -28,8 +28,15 @@
   become: true
   when: ansible_distribution == 'Ubuntu'
 
+- name: Make sure that user tmp directory exists
+  file:
+    path: ~/.tmp
+    state: directory
+
 - name: "install ruby 2.6.0"
   shell: ~/.rbenv/bin/rbenv install 2.6.0
+  environment:
+    TMPDIR: "{{ lookup('env', 'HOME') }}/.tmp"
   when: rbenv_2_6_0.stat.exists == False
 
 - name: "use ruby 2.6.0"
