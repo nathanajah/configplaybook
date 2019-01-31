@@ -9,7 +9,7 @@ let g:nathanajah_langserver_commands = {
   \   'jtl': ['javascript-typescript-stdio'],
   \ },
   \ 'c': {
-  \   'cquery': ['cquery', '--log-file=/tmp/cq.log'],
+  \   'cquery': ['cquery', '--log-file=/tmp/cq.log', '--init={"cacheDirectory":"' . $HOME . '/.cache/cquery"}'],
   \ },
   \ 'cpp': {
   \   'cquery': ['cquery', '--log-file=/tmp/cq.log'],
@@ -24,5 +24,5 @@ function Nathanajah_langclient_setup(lang, client)
   execute "autocmd Filetype " . a:lang . " nnoremap <buffer> <silent> K :call LanguageClient_textDocument_hover()<CR>"
   execute "autocmd Filetype " . a:lang . " nnoremap <buffer> <silent> gd :call LanguageClient_textDocument_definition()<CR>"
   execute "autocmd Filetype " . a:lang . " nnoremap <buffer> <silent> <F2> :call LanguageClient_textDocument_rename()<CR>"
-  execute "autocmd Filetype " . a:lang . " nnoremap <buffer> <silent> <F3> :call LanguageClient_textDocument_contextMenu()<CR>"
+  execute "autocmd Filetype " . a:lang . " nnoremap <buffer> <silent> <F3> :call LanguageClient_contextMenu()<CR>"
 endfunction
