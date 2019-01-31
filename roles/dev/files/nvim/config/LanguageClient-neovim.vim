@@ -16,7 +16,7 @@ let g:nathanajah_langserver_commands = {
   \ },
   \ }
 
-function Nathanajah_langserver_setup(lang, client)
+function Nathanajah_langclient_setup(lang, client)
   if !exists("g:LanguageClient_serverCommands")
     let g:LanguageClient_serverCommands = {}
   endif
