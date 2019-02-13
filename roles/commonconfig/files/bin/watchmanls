@@ -1,0 +1,26 @@
+#!/bin/bash
+
+mkdir -p "$HOME/.cache/watchman"
+
+CACHE="$HOME/.cache/watchman/$(echo "$PWD" | sed --expression='s#/#+=#g')"
+
+query() {
+  WATCHMAN_QUERY='["query", ".", {
+    "expression": ["allof",
+    ["type", "f"],
+    ["not", "empty"],
+    ["not", ["dirname", ".hg", ["depth", "ge", 0]]],
+    ["not", ["dirname", ".git", ["depth", "ge", 0]]]
+  ],
+  "fields": ["name"]
+  }]'
+  echo "$WATCHMAN_QUERY" | watchman -j  --no-pretty | jq -r ".files[]"
+}
+
+if [ -f "$CACHE" ]
+then
+  cat "$CACHE"
+else
+  query > "$CACHE"
+  cat "$CACHE"
+fi

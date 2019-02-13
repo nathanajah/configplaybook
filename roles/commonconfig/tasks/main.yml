@@ -1,3 +1,4 @@
 - import_tasks: zsh.yml
 - import_tasks: nvim.yml
 - import_tasks: tmux.yml
+- import_tasks: bin.yml

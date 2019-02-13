@@ -1,0 +1,5 @@
+#!/bin/bash
+
+CACHE="$HOME/.cache/watchman/$(echo "$PWD" | sed --expression='s#/#+=#g')"
+
+rm "$CACHE"

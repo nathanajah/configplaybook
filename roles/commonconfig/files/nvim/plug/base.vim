@@ -8,8 +8,5 @@ Plug 'easymotion/vim-easymotion'
 Plug 'moll/vim-bbye'
 Plug 'itchyny/lightline.vim'
 Plug 'edkolev/promptline.vim'
-Plug 'wincent/command-t', {
-    \   'do': 'cd ruby/command-t/ext/command-t && ruby extconf.rb && make'
-    \ }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'

@@ -56,6 +56,11 @@ then
   PATH="$HOME/bin:$PATH"
 fi
 
+if [ -d "$HOME/bin/common" ]
+then
+  PATH="$HOME/bin/common:$PATH"
+fi
+
 # Local bin
 if [ -d "$HOME/.local/bin" ]
 then
