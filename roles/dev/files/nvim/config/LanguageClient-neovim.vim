@@ -12,7 +12,7 @@ let g:nathanajah_langserver_commands = {
   \   'cquery': ['cquery', '--log-file=/tmp/cq.log', '--init={"cacheDirectory":"' . $HOME . '/.cache/cquery"}'],
   \ },
   \ 'cpp': {
-  \   'cquery': ['cquery', '--log-file=/tmp/cq.log'],
+  \   'cquery': ['cquery', '--log-file=/tmp/cq.log', '--init={"cacheDirectory":"' . $HOME . '/.cache/cquery"}'],
   \ },
   \ }
 
