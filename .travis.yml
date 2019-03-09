@@ -16,7 +16,7 @@ before_install:
   - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew install ansible; fi
 
 sudo: required
-dist: trusty
+dist: xenial
 
 script:
   - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then ansible-playbook -c local uowlaptop.yml; fi
