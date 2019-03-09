@@ -1,0 +1,5 @@
+- name: "Install ocaml langserver"
+  npm:
+    name: ocaml-language-server
+    path: '~'
+    state: latest

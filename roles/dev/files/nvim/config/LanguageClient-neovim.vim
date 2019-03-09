@@ -20,6 +20,12 @@ let g:nathanajah_langserver_commands = {
   \ 'html': {
   \   'html-ls': ['html-languageserver', '--stdio'],
   \ },
+  \ 'ocaml': {
+  \   'ocaml-ls': ['ocaml-language-server', '--stdio'],
+  \ },
+  \ 'reason': {
+  \   'ocaml-ls': ['ocaml-language-server', '--stdio'],
+  \ },
   \ }
 
 function Nathanajah_langclient_setup(lang, client)
