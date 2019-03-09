@@ -1,0 +1,19 @@
+- name: "install nodejs - mac"
+  homebrew:
+    name: node
+    state: latest
+  when: ansible_distribution == 'MacOSX'
+
+- name: "install nodejs - archlinux"
+  pacman:
+    name: nodejs
+    state: latest
+  become: true
+  when: ansible_distribution == 'Archlinux'
+
+- name: "install nodejs - ubuntu"
+  apt:
+    name: nodejs
+    state: latest
+  become: true
+  when: ansible_distribution == 'Ubuntu'
