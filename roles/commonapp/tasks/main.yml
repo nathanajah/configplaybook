@@ -13,3 +13,4 @@
 - import_tasks: ctags.yml
 - import_tasks: fzf.yml
 - import_tasks: npm.yml
+- import_tasks: node.yml
