@@ -1,0 +1,19 @@
+- name: "install npm - mac"
+  homebrew:
+    name: npm
+    state: latest
+  when: ansible_distribution == 'MacOSX'
+
+- name: "install npm - archlinux"
+  pacman:
+    name: npm
+    state: latest
+  become: true
+  when: ansible_distribution == 'Archlinux'
+
+- name: "install npm - ubuntu"
+  apt:
+    name: npm
+    state: latest
+  become: true
+  when: ansible_distribution == 'Ubuntu'

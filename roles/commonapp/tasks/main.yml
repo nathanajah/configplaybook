@@ -12,3 +12,4 @@
 - import_tasks: zsh.yml
 - import_tasks: ctags.yml
 - import_tasks: fzf.yml
+- import_tasks: npm.yml
