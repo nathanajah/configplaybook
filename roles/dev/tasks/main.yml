@@ -1,2 +1,3 @@
 - import_tasks: haskell.yml
 - import_tasks: nvim_config.yml
+- import_tasks: vscode_langservers.yml

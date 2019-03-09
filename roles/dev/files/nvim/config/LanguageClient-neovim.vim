@@ -14,6 +14,12 @@ let g:nathanajah_langserver_commands = {
   \ 'cpp': {
   \   'cquery': ['cquery', '--log-file=/tmp/cq.log', '--init={"cacheDirectory":"' . $HOME . '/.cache/cquery"}'],
   \ },
+  \ 'css': {
+  \   'css-ls': ['css-languageserver', '--stdio'],
+  \ },
+  \ 'html': {
+  \   'html-ls': ['html-languageserver', '--stdio'],
+  \ },
   \ }
 
 function Nathanajah_langclient_setup(lang, client)

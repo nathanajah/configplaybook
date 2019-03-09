@@ -1,0 +1,11 @@
+- name: "Install css langserver"
+  npm:
+    name: vscode-css-languageserver-bin
+    path: '~'
+    state: latest
+
+- name: "Install html langserver"
+  npm:
+    name: vscode-html-languageserver-bin
+    path: '~'
+    state: latest
