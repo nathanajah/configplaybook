@@ -1,8 +1,3 @@
-- name: Make directory for byobu conf
-  file:
-    path: ~/.byobu
-    state: directory
-
 - name: Make directory for tmux.conf
   file:
     path: ~/.config/tmux
@@ -12,11 +7,6 @@
   file:
     path: ~/.config/tmux/platform.tmux.conf
     state: touch
-
-- name: Copy .tmux.conf for byobu
-  copy:
-    src: files/tmux/.tmux.conf
-    dest: ~/.byobu/.tmux.conf
 
 - name: Copy .tmux.conf to ~
   copy:
