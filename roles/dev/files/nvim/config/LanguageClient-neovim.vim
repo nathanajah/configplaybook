@@ -26,6 +26,9 @@ let g:nathanajah_langserver_commands = {
   \ 'reason': {
   \   'ocaml-ls': ['ocaml-language-server', '--stdio'],
   \ },
+  \ 'python': {
+  \   'pyls': ['pyls'],
+  \ },
   \ }
 
 function Nathanajah_langclient_setup(lang, client)
