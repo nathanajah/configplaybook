@@ -10,3 +10,4 @@ Plug 'itchyny/lightline.vim'
 Plug 'edkolev/promptline.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'ntpeters/vim-better-whitespace'
