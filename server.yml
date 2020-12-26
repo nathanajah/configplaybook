@@ -1,0 +1,6 @@
+- hosts: server
+  roles:
+  - commonapp
+  - commonconfig
+  - dev
+  - uowlaptop
