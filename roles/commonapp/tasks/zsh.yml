@@ -17,4 +17,3 @@
     state: latest
   become: true
   when: ansible_distribution == 'Ubuntu'
-  

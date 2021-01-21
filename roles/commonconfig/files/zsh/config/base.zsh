@@ -89,6 +89,12 @@ then
   PATH="$HOME/node_modules/.bin:$PATH"
 fi
 
+# rustup bin
+if [ -d "$HOME/.cargo/bin" ]
+then
+  PATH="$HOME/.cargo/bin:$PATH"
+fi
+
 zmodload zsh/terminfo
 bindkey "$terminfo[kcuu1]" history-substring-search-up
 bindkey "$terminfo[kcud1]" history-substring-search-down

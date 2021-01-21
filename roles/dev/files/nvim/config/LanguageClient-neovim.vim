@@ -29,6 +29,9 @@ let g:nathanajah_langserver_commands = {
   \ 'python': {
   \   'pyls': ['pyls'],
   \ },
+  \ 'rust': {
+  \   'rls': ['rustup', 'run', 'stable', 'rls'],
+  \ },
   \ }
 
 function Nathanajah_langclient_setup(lang, client)
