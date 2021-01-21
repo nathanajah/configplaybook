@@ -59,13 +59,6 @@
   become: true
   when: ansible_distribution == 'Ubuntu'
 
-- name: "install pip2 - ubuntu"
-  apt:
-    name: python-pip
-    state: latest
-  become: true
-  when: ansible_distribution == 'Ubuntu'
-
 - name: "install virtualenv"
   pip:
     name: virtualenv
