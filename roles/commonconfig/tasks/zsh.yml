@@ -1,24 +1,4 @@
-- name: Make directory for zsh
-  file:
-    path: ~/.config/zsh
-    state: directory
-
-- name: Make directory for zsh config
-  file:
-    path: ~/.config/zsh/config
-    state: directory
-
 - name: Clone antigen
   git:
     repo: https://github.com/zsh-users/antigen
     dest: ~/.config/zsh/antigen/
-
-- name: Copy zshrc
-  copy:
-    src: files/zsh/.zshrc
-    dest: ~/.zshrc
-
-- name: Copy config
-  copy:
-    src: files/zsh/config/base.zsh
-    dest: ~/.config/zsh/config/base.zsh

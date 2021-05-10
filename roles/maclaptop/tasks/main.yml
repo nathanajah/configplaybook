@@ -1,3 +1,0 @@
-- import_tasks: nvim_config.yml
-- import_tasks: reattach_to_user_namespace.yml
-- import_tasks: tmux_config.yml

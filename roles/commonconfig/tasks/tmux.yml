@@ -1,25 +1,4 @@
-- name: Make directory for tmux.conf
-  file:
-    path: ~/.config/tmux
-    state: directory
-
-- name: Initialize empty platform conf
-  file:
-    path: ~/.config/tmux/platform.tmux.conf
-    state: touch
-
-- name: Copy .tmux.conf to ~
-  copy:
-    src: files/tmux/.tmux.conf
-    dest: ~/.tmux.conf
-
 - name: Clone tpm
   git:
     repo: https://github.com/tmux-plugins/tpm
     dest: ~/.config/tmux/plugins/tpm
-
-- name: Copy base.tmux.conf
-  copy:
-    src: files/tmux/config/base.tmux.conf
-    dest: ~/.config/tmux/base.tmux.conf
-

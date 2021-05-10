@@ -1,4 +1,0 @@
-- name: Copy config
-  copy:
-    src: files/tmux/mac.tmux.conf
-    dest: ~/.config/tmux/platform.tmux.conf
