@@ -1,6 +1,0 @@
-- name: "Install ruby-neovim"
-  gem:
-    executable: ~/.rbenv/versions/2.6.0/bin/gem
-    name: neovim
-    state: latest
-    user_install: no

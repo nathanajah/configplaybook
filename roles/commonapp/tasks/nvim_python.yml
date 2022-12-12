@@ -4,10 +4,3 @@
     state: latest
     virtualenv: "{{ nvim_python3_venv }}"
     virtualenv_python: python3
-
-- name: "install python2-neovim"
-  pip:
-    name: pynvim
-    state: latest
-    virtualenv: "{{ nvim_python2_venv }}"
-    virtualenv_python: python2
