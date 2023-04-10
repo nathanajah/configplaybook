@@ -4,22 +4,9 @@
     state: latest
   when: ansible_distribution == 'MacOSX'
 
-- name: "install python2 - mac"
-  homebrew:
-    name: python
-    state: latest
-  when: ansible_distribution == 'MacOSX'
-
 - name: "install python3 - archlinux"
   pacman:
     name: python
-    state: latest
-  become: true
-  when: ansible_distribution == 'Archlinux'
-
-- name: "install python2 - archlinux"
-  pacman:
-    name: python2
     state: latest
   become: true
   when: ansible_distribution == 'Archlinux'
@@ -34,13 +21,6 @@
 - name: "install python3 - ubuntu"
   apt:
     name: python3
-    state: latest
-  become: true
-  when: ansible_distribution == 'Ubuntu'
-
-- name: "install python2 - ubuntu"
-  apt:
-    name: python
     state: latest
   become: true
   when: ansible_distribution == 'Ubuntu'
