@@ -17,3 +17,23 @@
     state: latest
   become: true
   when: ansible_distribution == 'Ubuntu'
+
+- name: "install delta - mac"
+  homebrew:
+    name: git-delta
+    state: latest
+  when: ansible_distribution == 'MacOSX'
+
+- name: "Install delta - ubuntu"
+  apt:
+    name: git-delta
+    state: latest
+  become: true
+  when: ansible_distribution == 'Ubuntu'
+
+- name: "Install delta - archlinux"
+  pacman:
+    name: git-delta
+    state: latest
+  become: true
+  when: ansible_distribution == 'Archlinux'
