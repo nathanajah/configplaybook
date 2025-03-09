@@ -37,3 +37,23 @@
     state: latest
   become: true
   when: ansible_distribution == 'Archlinux'
+
+- name: "Install lazygit - mac"
+  homebrew:
+    name: jesseduffield/lazygit/lazygit
+    state: latest
+  when: ansible_distribution == 'MacOSX'
+
+- name: "Install lazygit - archlinux"
+  pacman:
+    name: lazygit
+    state: latest
+  become: true
+  when: ansible_distribution == 'Archlinux'
+
+- name: "Install lazygit - ubuntu"
+  apt:
+    name: lazygit
+    state: latest
+  become: true
+  when: ansible_distribution == 'Ubuntu'
